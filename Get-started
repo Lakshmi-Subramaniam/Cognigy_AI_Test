@@ -1,0 +1,114 @@
+# Getting Started with Cognigy.AI
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1, h2, h3 {
+  color: #2c3e50;
+}
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+</style>
+
+Welcome to Cognigy.AI! This guide is designed for advanced users who have switched from Cognigy competitors, as well as beginners choosing Cognigy as a no-code solution. Let's dive into the powerful world of Cognigy.AI and explore its benefits and interface.
+
+## What is Cognigy.AI?
+
+Cognigy.AI is a cutting-edge conversational AI platform that enables you to create intelligent virtual agents without extensive coding knowledge. It offers a robust set of tools for building, deploying, and managing conversational experiences across various channels.
+
+## Key Benefits
+
+- **No-Code Solution**: Build sophisticated AI agents without writing complex code.
+- **Omnichannel Capabilities**: Deploy your virtual agents across multiple platforms seamlessly.
+- **Advanced NLU**: Leverage state-of-the-art natural language understanding for accurate intent recognition.
+- **Flexible Integration**: Connect with your existing systems and databases effortlessly.
+- **Analytics and Insights**: Gain valuable insights into user interactions and agent performance.
+
+## Navigating the Cognigy.AI Interface
+
+### 1. Dashboard
+
+Upon logging in, you'll be greeted by the dashboard. Here, you can:
+
+- View key metrics and performance indicators
+- Access recent projects and agents
+- Navigate to different sections of the platform
+
+### 2. Flow Editor
+
+The heart of Cognigy.AI, where you build your conversational flows:
+
+- Drag-and-drop interface for creating dialogue nodes
+- Visual representation of conversation paths
+- Easy integration of logic, API calls, and external services
+
+### 3. Lexicon
+
+Manage your agent's language understanding:
+
+- Create and organize intents and entities
+- Train your NLU model with sample utterances
+- Fine-tune language understanding for better accuracy
+
+### 4. Analytics
+
+Dive deep into your agent's performance:
+
+- View conversation logs and user interactions
+- Analyze intent recognition accuracy
+- Track key performance indicators (KPIs)
+
+### 5. Endpoints
+
+Configure and manage various deployment channels:
+
+- Set up integrations with messaging platforms, voice assistants, and custom channels
+- Manage endpoint-specific settings and configurations
+
+## Quick Start Guide
+
+1. **Create a New Agent**:
+   - Click on "Create New Agent" from the dashboard
+   - Give your agent a name and select a language
+
+2. **Design Your Flow**:
+   - Use the Flow Editor to create your conversation structure
+   - Add nodes for greetings, intents, and responses
+
+3. **Train Your NLU**:
+   - Navigate to the Lexicon
+   - Add intents and sample utterances
+   - Train your model
+
+4. **Test Your Agent**:
+   - Use the built-in Chat UI to test your agent's responses
+   - Refine and iterate based on the results
+
+5. **Deploy Your Agent**:
+   - Go to the Endpoints section
+   - Choose your desired channel(s)
+   - Configure the necessary settings
+
+6. **Monitor and Improve**:
+   - Use the Analytics section to track performance
+   - Continuously refine your agent based on real user interactions
+
+## Tips for Success
+
+- Start with a clear use case and gradually expand your agent's capabilities
+- Utilize Cognigy's extensive documentation and video tutorials for in-depth learning
+- Engage with the Cognigy community forums for support and best practices
+- Regularly update and retrain your NLU model to improve accuracy
+
+## Conclusion
+
+Cognigy.AI offers a powerful yet accessible platform for creating sophisticated conversational AI experiences. Whether you're transitioning from another platform or starting fresh with no-code development, Cognigy.AI provides the tools you need to succeed.
