@@ -1,168 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started with Cognigy.AI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        a {
-            color: #1a73e8;
-        }
-        .indent {
-            margin-left: 20px;
-        }
-    </style>
-</head>
-<body>
+# Get Started with Cognigy.AI
 
-<h1>Getting Started with Cognigy.AI</h1>
+Welcome to Cognigy.AI! This guide will walk you through creating your first Virtual Agent (VA) and deploying it for public use. Let's begin your journey into the world of Conversational AI.
 
-<p>Welcome to Cognigy.AI! This guide helps both advanced users transitioning from other platforms and beginners using Cognigy as a no-code solution. Learn about Cognigy.AI's benefits and interface.</p>
+## 1. Create Your Virtual Agent
 
-<h2>What is Cognigy.AI?</h2>
+A Virtual Agent is an automated bot designed to handle interactions. Here's how to create one:
 
-<p>Cognigy.AI is a conversational AI platform for creating intelligent virtual agents without extensive coding. It provides tools for building, deploying, and managing conversational experiences across multiple channels.</p>
+1. Click **Create Agent** in the top-left corner.
+2. In the "Create Agent" wizard:
+   - Name your VA (e.g., "My New Agent")
+   - Select the primary language
+   - Choose a color for easy navigation
+   - Select the **Blank template**
+   - Confirm **Webchat** as the output channel
+   - Skip the **Skills** section for now
+3. Click **Go to Agent** to start building.
 
-<h2>Key benefits</h2>
+## 2. Design Your First Conversation Flow
 
-<ul>
-    <li><strong>No-code solution</strong>: Build AI agents without complex coding.</li>
-    <li><strong>Omnichannel capabilities</strong>: Deploy virtual agents across multiple platforms.</li>
-    <li><strong>Advanced NLU</strong>: Use state-of-the-art natural language understanding for accurate intent recognition.</li>
-    <li><strong>Flexible integration</strong>: Connect with existing systems and databases.</li>
-    <li><strong>Analytics and insights</strong>: Gain insights into user interactions and agent performance.</li>
-</ul>
+A Flow defines the logic and sequence of a conversation. Let's create a simple one:
 
-<h2>Navigate the Cognigy.AI interface</h2>
+1. Navigate to **Build > Flows** in the left sidebar.
+2. Click **New Flow** and name it (e.g., "Flow 1").
+3. In the Flow editor, add a **Say Node** between the Start and End nodes:
+   - Click the plus icon
+   - Select **Say Node**
+   - In the Text field, enter a greeting (e.g., "Hello User!")
+   - Save the node
 
-<h3>Dashboard</h3>
+## 3. Test Your Virtual Agent
 
-<p>When you log in, you see the dashboard. Here you can:</p>
+Use the Interaction Panel to chat with your VA:
 
-<ul>
-    <li>View key metrics and performance indicators.</li>
-    <li>Access recent projects and agents.</li>
-    <li>Navigate to different platform sections.</li>
-</ul>
+1. Click the speech bubble icon in the top-right to open the Interaction Panel.
+2. Type "hello!" and press Enter.
+3. You should see your VA's response.
 
-<h3>Flow Editor</h3>
+> **Tip:** Use the "more options" menu (three dots) or press Ctrl + B to clear the chat.
 
-<p>Build your conversational flows in the Flow Editor:</p>
+## 4. Enhance Your VA with a Question
 
-<ul>
-    <li>Use the drag-and-drop interface to create dialogue nodes.</li>
-    <li>Visualize conversation paths.</li>
-    <li>Integrate logic, API calls, and external services.</li>
-</ul>
+Let's make your VA interactive by asking a question:
 
-<h3>Lexicon</h3>
+1. Add a **Question Node** after your Say Node.
+2. Set the Type to "Text" and enter a question (e.g., "What's your name?").
+3. Add another **Say Node** after the Question Node.
+4. In the new Say Node, enter "Hello " followed by the Last Question Result token.
 
-<p>Manage your agent's language understanding:</p>
+Test your enhanced VA in the Interaction Panel to see it in action!
 
-<ul>
-    <li>Create and organize intents and entities.</li>
-    <li>Train your NLU model with sample utterances.</li>
-    <li>Fine-tune language understanding for better accuracy.</li>
-</ul>
+## 5. Deploy Your Virtual Agent
 
-<h3>Analytics</h3>
+Make your VA publicly accessible:
 
-<p>Analyze your agent's performance:</p>
+1. Go to **Deploy > Endpoints** in the sidebar.
+2. Click **New Endpoint**.
+3. Name your endpoint (e.g., "Web") and select "Webchat" as the Endpoint Type.
+4. Choose your main Flow (e.g., "Flow 1").
+5. Save and click "Open Webchat" to see your VA in a browser.
 
-<ul>
-    <li>View conversation logs and user interactions.</li>
-    <li>Analyze intent recognition accuracy.</li>
-    <li>Track key performance indicators (KPIs).</li>
-</ul>
+Congratulations! You've created and deployed your first Virtual Agent with Cognigy.AI.
 
-<h3>Endpoints</h3>
+## Next Steps
 
-<p>Configure and manage deployment channels:</p>
+- Explore more node types to add complexity to your conversations
+- Learn about Skills to enhance your VA's capabilities
+- Experiment with different Endpoint types for various platforms
 
-<ul>
-    <li>Set up integrations with messaging platforms, voice assistants, and custom channels.</li>
-    <li>Manage endpoint-specific settings.</li>
-</ul>
-
-<h2>Get started</h2>
-
-<ol>
-    <li>
-        <p>Create a new agent:</p>
-        <ul class="indent">
-            <li>Click <strong>Create New Agent</strong> on the dashboard.</li>
-            <li>Enter a name for your agent and select a language.</li>
-        </ul>
-    </li>
-    <li>
-        <p>Design your flow:</p>
-        <ul class="indent">
-            <li>Use the Flow Editor to create your conversation structure.</li>
-            <li>Add nodes for greetings, intents, and responses.</li>
-        </ul>
-    </li>
-    <li>
-        <p>Train your NLU:</p>
-        <ul class="indent">
-            <li>Go to the Lexicon.</li>
-            <li>Add intents and sample utterances.</li>
-            <li>Train your model.</li>
-        </ul>
-    </li>
-    <li>
-        <p>Test your agent:</p>
-        <ul class="indent">
-            <li>Use the built-in Chat UI to test your agent's responses.</li>
-            <li>Refine based on the results.</li>
-        </ul>
-    </li>
-    <li>
-        <p>Deploy your agent:</p>
-        <ul class="indent">
-            <li>Go to the Endpoints section.</li>
-            <li>Choose your desired channel(s).</li>
-            <li>Configure the necessary settings.</li>
-        </ul>
-    </li>
-    <li>
-        <p>Monitor and improve:</p>
-        <ul class="indent">
-            <li>Use the Analytics section to track performance.</li>
-            <li>Continuously refine your agent based on user interactions.</li>
-        </ul>
-    </li>
-</ol>
-
-<h2>Tips for success</h2>
-
-<ul>
-    <li>Start with a clear use case and gradually expand your agent's capabilities.</li>
-    <li>Use Cognigy's documentation and video tutorials for in-depth learning.</li>
-    <li>Engage with the Cognigy community forums for support and best practices.</li>
-    <li>Regularly update and retrain your NLU model to improve accuracy.</li>
-</ul>
-
-<h2>Next steps</h2>
-
-<p>Cognigy.AI offers a powerful yet accessible platform for creating sophisticated conversational AI experiences. Whether you're transitioning from another platform or starting with no-code development, Cognigy.AI provides the tools you need to succeed.</p>
-
-<p>To learn more, visit the <a href="https://docs.cognigy.com">Cognigy documentation</a>.</p>
-
-</body>
-</html>
+For more detailed information, refer to our comprehensive documentation. Happy building!
